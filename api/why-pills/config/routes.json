@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/why-pills",
+      "handler": "why-pills.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/why-pills/count",
+      "handler": "why-pills.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/why-pills/:id",
+      "handler": "why-pills.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/why-pills",
+      "handler": "why-pills.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/why-pills/:id",
+      "handler": "why-pills.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/why-pills/:id",
+      "handler": "why-pills.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

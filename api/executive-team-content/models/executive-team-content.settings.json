@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "executive_team_contents",
+  "info": {
+    "name": "ExecutiveTeamContent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "default": "First Last"
+    },
+    "position": {
+      "type": "string",
+      "required": true,
+      "default": "Position"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

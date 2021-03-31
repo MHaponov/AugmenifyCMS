@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "products_pages",
+  "info": {
+    "name": "ProductsPage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "why_pills": {
+      "collection": "why-pills"
+    },
+    "why_section": {
+      "model": "why-section"
+    },
+    "products": {
+      "collection": "products"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

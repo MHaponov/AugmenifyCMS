@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_contents",
+  "info": {
+    "name": "AboutContent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "executive_team_contents": {
+      "collection": "executive-team-content"
+    }
+  }
+}
