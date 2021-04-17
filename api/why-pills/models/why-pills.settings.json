@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "why_pills",
+  "info": {
+    "name": "WhyPill",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

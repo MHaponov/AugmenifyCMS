@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "name": "AboutPage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "executive_team_contents": {
+      "collection": "executive-team-content"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "missionTitle": {
+      "type": "string",
+      "required": true
+    },
+    "missionDescription": {
+      "type": "text",
+      "required": true
+    },
+    "sideImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
