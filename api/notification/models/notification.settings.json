@@ -16,6 +16,9 @@
     },
     "link": {
       "type": "string"
+    },
+    "display": {
+      "type": "boolean"
     }
   }
 }
